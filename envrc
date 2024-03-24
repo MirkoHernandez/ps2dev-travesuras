@@ -1,0 +1,15 @@
+# envrc template
+
+# ps2dev binaries
+export PS2DEV=$HOME/.local/bin/ps2dev 
+export PS2SDK=$PS2DEV/ps2sdk 
+export GSKIT=$PS2DEV/gsKit
+PATH_add $PS2DEV/bin:$PS2DEV/ee/bin:$PS2DEV/iop/bin:$PS2DEV/dvp/bin:$PS2SDK/bin
+
+# emulator
+PATH_add $HOME/.local/bin/pcsx2 
+
+# gtags 
+export GTAGSLIBPATH=$HOME/.local/share/ps2sdk
+
+

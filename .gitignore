@@ -1,3 +1,11 @@
+.envrc
+.tissue
+*.pcsx2.config
+*.PCSX2_vm.ini
+*.GPATH
+*.GRTAGS
+*.GTAGS
+
 # Prerequisites
 *.d
 
