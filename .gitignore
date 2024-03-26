@@ -2,9 +2,10 @@
 .tissue
 *.pcsx2.config
 *.PCSX2_vm.ini
-*.GPATH
-*.GRTAGS
-*.GTAGS
+GPATH
+GRTAGS
+GTAGS
+doxygen
 
 # Prerequisites
 *.d
