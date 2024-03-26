@@ -1,0 +1,17 @@
+# Dibujar primitivos
+
+Son solo 7 primitivos los que se pueden dibujar. Crear un programa para cada uno de ellos.
+
+Utilizar librerías graph y draw para reducir la cantidad de código.
+
+- [ ] point 
+- [ ] line
+- [ ] line strip
+- [ ] triangle
+- [ ] triangle strip
+- [ ] triangle fan
+- [ ] sprite
+
+
+
+
