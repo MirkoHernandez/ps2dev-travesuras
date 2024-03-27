@@ -1,6 +1,6 @@
 # PACK_GIFTAG 
 
-Este es probablemente el macro mas importante en PS2SDK.
+Este es probablemente el macro más importante (más utilizado) en PS2SDK.
 
 Sirve para llenar un qword. 
 
@@ -12,11 +12,10 @@ Sirve para llenar un qword.
 
 A pesar del nombre, sirve para llenar qwords que no sean un GIFTAG.
 
+## Ejemplos
 ```c
-// set giftag
 PACK_GIFTAG(q, GIF_SET_TAG(4, 1, 0, 0, 0, 1),GIF_REG_AD);
 q++;
-// set gs primitive data
 PACK_GIFTAG(q, GIF_SET_PRIM(6, 0, 0, 0, 0, 0, 0, 0, 0), GIF_REG_PRIM);
 q++;
 PACK_GIFTAG(q, GIF_SET_RGBAQ((loop0 * 10), 0, 255 - (loop0 * 10), 0x80, 0x3F800000), GIF_REG_RGBAQ);
