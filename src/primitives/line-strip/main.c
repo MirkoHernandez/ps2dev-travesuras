@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 /// @file  main.c
-/// @brief  Mostrar line strip
+/// @brief  Mostrar line strip.
 
 #include <stdio.h>
 #include <stdlib.h>
