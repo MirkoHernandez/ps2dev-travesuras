@@ -8,8 +8,8 @@ para cada uno.
 
 En el siguiente ejemplo se marcan 6 registros:
 
- - GIFTAG: NREG 6,  NLOOP 1
- - REGS: 3 pares de coordenada (5) y posición (1)  (515151)
+ - GIFTAG: NREG es 6, EOP es 8,  NLOOP es  1
+ - REGS: 3 pares compuestos por coordenada (5) y posición (1)  (515151)
 
 ```c
 q->dw[0] = 0x6000000000008001;

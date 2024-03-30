@@ -1,0 +1,8 @@
+# explorar funciones timing
+
+Encontrar forma de acceder a RDTSC o equivalente.
+
+
+
+
+
