@@ -41,8 +41,8 @@ GTAGSLIBPATH. GTAGSTHROUGH permite usar esa opción por defecto.
 
 * [PS2DEV](https://github.com/ps2dev) Herramientas homebrew para PS2.
 * [Lukasz D.K.](https://github.com/lukaszdk) Tutoriales, incluidos los de HS Fortuna.
-* [Guilherme Lampert](https://github.com/glampert) Excelente artículo sobre PS2 hardware.
+* [Guilherme Lampert](https://glampert.com) Excelente artículo sobre PS2 hardware.
 * [Tom Marks](https://github.com/phy1um/ps2-homebrew-livestreams) Streams en donde se programan gráficos sin el uso de algunas librerías de PS2SDK.
 * [ps2tek](https://psi-rockin.github.io/ps2tek/#gs) Única documentación disponible de formatos de data.
-* [gamedev.net](https://gamedev.net/reference/articles/article2027.asp) Buen articulo sobre una posible abstracción de rendering code.
+* [gamedev.net](https://gamedev.net/reference/articles/article2027.asp) Buen artículo sobre una posible abstracción de rendering code.
 * [forums.ps2dev.org](https://forums.ps2dev.org/viewtopic.php?t=2842&highlight=clock+tick) Post sobre uso de registros para timer.
