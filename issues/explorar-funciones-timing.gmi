@@ -2,6 +2,10 @@
 
 Encontrar forma de acceder a RDTSC o equivalente.
 
+* closed
+
+
+
 
 
 

@@ -45,3 +45,4 @@ GTAGSLIBPATH. GTAGSTHROUGH permite usar esa opción por defecto.
 * [Tom Marks](https://github.com/phy1um/ps2-homebrew-livestreams) Streams en donde se programan gráficos sin el uso de algunas librerías de PS2SDK.
 * [ps2tek](https://psi-rockin.github.io/ps2tek/#gs) Única documentación disponible de formatos de data.
 * [gamedev.net](https://gamedev.net/reference/articles/article2027.asp) Buen articulo sobre una posible abstracción de rendering code.
+* [forums.ps2dev.org](https://forums.ps2dev.org/viewtopic.php?t=2842&highlight=clock+tick) Post sobre uso de registros para timer.
