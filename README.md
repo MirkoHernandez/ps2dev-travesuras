@@ -13,7 +13,8 @@ doxygen Doxyfile
 ```
 
 También hay algunos documentos en markdown que se pueden leer
-directamente sin la necesidad de tener Doxygen instalado.
+directamente (en directorio docs) sin la necesidad de tener Doxygen
+instalado.
 
 ## Recomendación para navegar código
 
@@ -32,10 +33,13 @@ Luego se puede exportar GTAGSLIBPATH para obtener acceso a esos tags.
 
 ```bash
 export GTAGSLIBPATH=$HOME/.local/share/ps2sdk
-export GTAGSLIBPATH=true 
+export GTAGSTHROUGH=true 
 ```
+
 Se debe utilizar global con la opción -T para encontrar tags en
-GTAGSLIBPATH. GTAGSTHROUGH permite usar esa opción por defecto. 
+GTAGSLIBPATH. La variable GTAGSTHROUGH permite usar esa opción por
+defecto; puede tener cualquier valor (se le asigna true en el
+ejemplo).
 
 # Recursos PS2DEV
 
@@ -46,3 +50,4 @@ GTAGSLIBPATH. GTAGSTHROUGH permite usar esa opción por defecto.
 * [ps2tek](https://psi-rockin.github.io/ps2tek/#gs) Única documentación disponible de formatos de data.
 * [gamedev.net](https://gamedev.net/reference/articles/article2027.asp) Buen artículo sobre una posible abstracción de rendering code.
 * [forums.ps2dev.org](https://forums.ps2dev.org/viewtopic.php?t=2842&highlight=clock+tick) Post sobre uso de registros para timer.
+* [Tyra](https://github.com/h4570/tyra) Tyra Game Engine. 
