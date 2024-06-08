@@ -15,10 +15,9 @@
 #include <dma.h>
 
 
-
-/// \defgroup TIME timer: Funciones para lectura ciclos y de milisegundos(v1).
+/// \defgroup TIME timer: Funciones para lectura de ciclos y de milisegundos(v1).
 // @details  Esto es  similar a  como funciona  time.c de libc en  ps2sdk, se
-// cuenta el número de overflows..
+// cuenta el número de overflows.
 // @{
 static u64 intr_overflow_count = 0;
 
@@ -45,7 +44,7 @@ void init_t1_timer(void)
   
   *T1_COUNT = 0;
 
-  // Modo 0x02 genera 10 overflow por segundo aproximadamente.
+  // Modo 0x02 genera 10 overflows por segundo aproximadamente.
   *T1_MODE = Tn_MODE(0x02, 0, 0, 0, 0, 0x01, 0, 0x01, 0, 0);
 
   intr_overflow_count = 0;
@@ -161,6 +160,7 @@ int main()
     draw_wait_finish();
 
     // vsync cambia ms per frame correctamente a 16 (en test realizado con monitor a 60 fps).
+    // comentado acá para poder probar funcionamiento de counter.
     /* graph_wait_vsync(); */
 
     u64 end_cycle_count = get_t1_count();
