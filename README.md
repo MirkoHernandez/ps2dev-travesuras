@@ -44,6 +44,7 @@ ejemplo).
 # Recursos PS2DEV
 
 * [PS2DEV](https://github.com/ps2dev) Herramientas homebrew para PS2.
+* [PS2SDK samples](https://github.com/ps2dev/ps2sdk) PS2SDK tiene varios directorios samples, no solo uno.
 * [Lukasz D.K.](https://github.com/lukaszdk) Tutoriales, incluidos los de HS Fortuna.
 * [Guilherme Lampert](https://glampert.com) Excelente artículo sobre PS2 hardware.
 * [Tom Marks](https://github.com/phy1um/ps2-homebrew-livestreams) Streams en donde se programan gráficos sin el uso de algunas librerías de PS2SDK.
