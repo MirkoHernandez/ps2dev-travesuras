@@ -2,6 +2,7 @@
 
 Ver que mecanismos hay para acceder a input.
 
+* closed
 
 
 
