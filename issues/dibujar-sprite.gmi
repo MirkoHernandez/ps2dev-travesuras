@@ -1,0 +1,6 @@
+# dibujar sprite 
+
+Ver que funciones se pueden usar para cargar archivo y renderizar sprite.
+
+* closed
+
