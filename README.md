@@ -41,14 +41,17 @@ GTAGSLIBPATH. La variable GTAGSTHROUGH permite usar esa opción por
 defecto; puede tener cualquier valor (se le asigna true en el
 ejemplo).
 
+Para conveniencia se incluye un archivo envrc de muestra con estas
+variables ya configuradas.
+
 # Recursos PS2DEV
 
 * [PS2DEV](https://github.com/ps2dev) Herramientas homebrew para PS2.
 * [PS2SDK samples](https://github.com/ps2dev/ps2sdk) PS2SDK tiene varios directorios samples, no solo uno.
-* [Lukasz D.K.](https://github.com/lukaszdk) Tutoriales, incluidos los de HS Fortuna.
+* [Lukasz D.K.](https://github.com/lukaszdk) Tutoriales, incluidos los de HS Fortuna (Muy buenos pero no refieren a PS2SDK).
 * [Guilherme Lampert](https://glampert.com) Excelente artículo sobre PS2 hardware.
 * [Tom Marks](https://github.com/phy1um/ps2-homebrew-livestreams) Streams en donde se programan gráficos sin el uso de algunas librerías de PS2SDK.
-* [ps2tek](https://psi-rockin.github.io/ps2tek/#gs) Única documentación disponible de formatos de data.
+* [ps2tek](https://psi-rockin.github.io/ps2tek/#gs) Unica documentación disponible de formatos de data (que pude encontrar).
 * [gamedev.net](https://gamedev.net/reference/articles/article2027.asp) Buen artículo sobre una posible abstracción de rendering code.
-* [forums.ps2dev.org](https://forums.ps2dev.org/viewtopic.php?t=2842&highlight=clock+tick) Post sobre uso de registros para timer.
+* [forums.ps2dev.org](https://forums.ps2dev.org/viewtopic.php?t=2842&highlight=clock+tick) Post sobre uso de registros para timer (esencial para poder entender registros de timer).
 * [Tyra](https://github.com/h4570/tyra) Tyra Game Engine. 
