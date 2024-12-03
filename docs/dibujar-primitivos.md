@@ -1,7 +1,7 @@
 # Dibujar primitivos
 
 Existen varias formas de dibujar primitivos utilizando giftags y
-primitive data
+primitive data.
 
 ## Forma más fácil de dibujar.
 
@@ -71,15 +71,16 @@ otro se indica que se usara el registro de color GIF_REG_RGBAQ.
 
 Cuando se especifica un registro de color en REGS (5) el formato es el siguiente.
 
-  Writes to RGBAQ register (Q is unchanged)
-  0-7     R
-  8-31    Unused
-  32-39   G
-  40-63   Unused
-  64-71   B
-  72-95   Unused
-  96-103  A
-  104-127 Unused
+| Writes to RGBAQ register (Q is unchanged) |        |
+|-------------------------------------------|--------|
+| 0-7                                       | R      |
+| 8-31                                      | Unused |
+| 32-39                                     | G      |
+| 40-63                                     | Unused |
+| 64-71                                     | B      |
+| 72-95                                     | Unused |
+| 96-103                                    | A      |
+| 104-127                                   | Unused |
 
 ##  El formato de las coordenadas tiene que ser el correcto. 
 

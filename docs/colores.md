@@ -19,8 +19,7 @@ Cuando se especifica que se leerá address+data (GIF_REG_AD) entonces el
 color esta en 64 bits, se tiene que indicar que se usara registro de
 color(GIF_REG_RGBAQ equivalente a 5).
 
-
-El siguiente macro facilita es establecer colores.
+El siguiente macro facilita el establecer colores.
 
 ```c
 #define GS_SET_RGBAQ(R,G,B,A,Q) \

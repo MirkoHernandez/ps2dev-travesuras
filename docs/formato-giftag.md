@@ -2,17 +2,18 @@
 
 128 bits.
 
-- Aca se establece que registros se usaran
+- Aca se establece que registros (y tipo de data) se usaran en GS.
 
 Primitive data se almacena en batches.
 
- 1 REGS: 64 bits. Se puede considerar array de 16 elementos. 
- 2 NREG: Número de registros utilizados.
- 3 FLG: Formato de primitivo data
- 4 PRIM: Primitivo
- 5 EOP: Ultimo GIFTAG
- 6 PRE: Pasar PRIM de registro a GS.
- 7 NLOOP: Cuantas veces leer data especificada en registros. 
+1. REGS: 64 bits. Se puede considerar array de 16 elementos. 
+2. NREG: Número de registros utilizados.
+3. FLG: Formato de primitivo data
+4. PRIM: Primitivo
+5. EOP: Ultimo GIFTAG
+6. PRE: Pasar PRIM de registro a GS.
+7. NLOOP: Cuantas veces leer data especificada en registros. 
+
 
 # Ejemplo
 
