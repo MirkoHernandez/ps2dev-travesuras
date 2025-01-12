@@ -58,8 +58,6 @@ qword_t *draw_triangle_fan(qword_t *q)
     q++;
 
     PACK_GIFTAG(q, GIF_SET_RGBAQ(red, green,  blue, 128, 128), GIF_REG_RGBAQ);
-    print_dword(q->dw[0]);
-    print_dword(q->dw[1]);
     q++;
     PACK_GIFTAG(q, GIF_SET_XYZ(ftoi4(-400 +OFFSET),
 			       ftoi4(-220+OFFSET),
