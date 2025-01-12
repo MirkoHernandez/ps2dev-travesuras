@@ -2,5 +2,10 @@
 
 Ver que funciones se pueden usar para cargar archivo y renderizar sprite.
 
+* Resolución
+
+PS2SDK no tiene funciones para cargar imagenes (Se pueden usar
+librerias como gsKit).
+
 * closed
 

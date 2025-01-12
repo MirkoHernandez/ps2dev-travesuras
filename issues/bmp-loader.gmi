@@ -1,0 +1,5 @@
+# Crear bmp loader.
+
+* tags: input graficos
+
+Crear versión básica de bmp loader.
