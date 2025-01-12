@@ -66,12 +66,11 @@ loadModules(void)
 /// @brief Usando libpad.
 /// @details Slot debería ser 0 siempre a menos que se este usando multitap.
 /// @{
-
 /// @brief Leer  estado de pad.
-/// @details Los estados  disponibles son
-/// disconnected,  findpad,  findctp1,   execcmd,  stable,  error.  Se
-/// utiliza  padGetState para  leer  estado. waitPadReady  simplemente
-/// espera hasta que estado de pad sea stable.
+/// @details  Los  estados   disponibles  son  disconnected,  findpad,
+/// findctp1, execcmd, stable, error. Se utiliza padGetState para leer
+/// estado. waitPadReady  simplemente espera  hasta que estado  de pad
+/// sea stable.
 static int waitPadReady(int port, int slot) {
 	int state;
 	int lastState;
@@ -100,15 +99,15 @@ static int waitPadReady(int port, int slot) {
 
 /// @brief inicializar actuators de dual shock controller.
 /// @details
-/// A pesar del nombre ésta función solo inicia actuators de dual shock controller.
-/// padInfoMode utiliza padGetDmaStr para obtener toda (al parecer)
-/// la data de pad y de eso obtiene pdata->nrOfModes; si cuarto parámetro es -1,
-/// de lo contrario  información especifica de algún modo.
-/// Si se confirma que pad es dual shock se establece padSetMainMode a
-/// PAD_MMODE_DUALSHOCK (al  parecer es necesario verificar posteriormente  estado de
-/// pad). Luego  se  obtiene numero  de actuators  con
-/// padInfoAct y se establece estado inicial de actuators con
-/// padSetActAlign.
+/// A  pesar del  nombre ésta  función solo  inicia actuators  de dual
+/// shock  controller. padInfoMode  utiliza padGetDmaStr  para obtener
+/// toda   (al  parecer)   la   data   de  pad   y   de  eso   obtiene
+/// pdata->nrOfModes; si el cuarto parámetro es -1, de lo contrario la
+/// información especifica  de algún modo.  Si se confirma que  pad es
+/// dual shock  se establece padSetMainMode a  PAD_MMODE_DUALSHOCK (al
+/// parecer  es necesario  verificar  posteriormente  estado de  pad).
+/// Luego se obtiene numero de actuators con padInfoAct y se establece
+/// estado inicial de actuators con padSetActAlign.
  
 static int
 initializePad(int port, int slot) {
