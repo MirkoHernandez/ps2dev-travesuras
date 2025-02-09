@@ -1,5 +1,16 @@
 # Crear bmp loader.
 
-* tags: input graficos
+* tags: graficos
 
 Crear versión básica de bmp loader.
+
+* Resolución
+
+Para poder cargar un archivo BMP es necesario considerar:
+   
+* Orden en que viene cada pixel.
+* Padding para cada row de imagen.
+* Imagen viene invertida verticalmente.  
+
+* closed
+
