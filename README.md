@@ -54,4 +54,5 @@ variables ya configuradas.
 * [ps2tek](https://psi-rockin.github.io/ps2tek/#gs) Unica documentación disponible de formatos de data (que pude encontrar).
 * [gamedev.net](https://gamedev.net/reference/articles/article2027.asp) Buen artículo sobre una posible abstracción de rendering code.
 * [forums.ps2dev.org](https://forums.ps2dev.org/viewtopic.php?t=2842&highlight=clock+tick) Post sobre uso de registros para timer (esencial para poder entender registros de timer).
-* [Tyra](https://github.com/h4570/tyra) Tyra Game Engine. 
+* [Tyra](https://github.com/h4570/tyra) Tyra Game Engine.
+* [PS2DEV-World](https://github.com/playstation2-development/ps2dev-world) Repositorio que lista decenas de recursos para PS2DEV.
