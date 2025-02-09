@@ -1,4 +1,4 @@
-EE_OBJS=main.o  $(PS2DEV)/gsKit/lib/libgskit.a
+EE_OBJS=main.o  
 EE_CFLAGS += -Wall --std=c99 $(DVARS) 
 
 BROWSER=qutebrowser

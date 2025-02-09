@@ -9,7 +9,7 @@ compile: $(EE_BIN)
 
 .PHONY: run
 run:
-	pcsx2 --elf=$(mkfile_dir)/$(EE_BIN) --fullscreen --nogui
+	pcsx2 -elf $(mkfile_dir)$(EE_BIN) -fullscreen -nogui
 
 .PHONY: docs
 
