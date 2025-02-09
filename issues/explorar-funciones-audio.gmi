@@ -1,0 +1,7 @@
+# explorar funciones de audio
+
+* tags: audio
+
+Cargar un archivo wav y ver de que maneras se puede manipular.
+
+
