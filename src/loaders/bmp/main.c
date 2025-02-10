@@ -19,10 +19,6 @@
 
 #define OFFSET 2048.0f
 
-#if __DOXYGEN__
-#define FORCE_INLINE
-#endif
-
 /// \addtogroup  loaders Loaders: Loader basico para formato BMP.
 /// @{
 typedef struct __attribute__((__packed__)) bmp_header {

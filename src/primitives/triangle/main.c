@@ -53,11 +53,14 @@ init_gs(framebuffer_t *frame, zbuffer_t *z, int width, int height, int psm, int 
 	frame->psm = psm;
 	frame->mask = 0;
         frame->address = graph_vram_allocate(width, height, psm, GRAPH_ALIGN_PAGE);
-	z->address = graph_vram_allocate(width, height, psmz, GRAPH_ALIGN_PAGE);
-	z->enable = 0;
-	z->method = 0;
-	z->zsm = 0;
+
+	
+	z->enable = DRAW_ENABLE;
+	z->method = ZTEST_METHOD_GREATER_EQUAL;
+	z->zsm = GS_ZBUF_32;
 	z->mask = 0;
+	
+	z->address = graph_vram_allocate(width, height, z->zsm, GRAPH_ALIGN_PAGE);
 
 	graph_initialize(frame->address,frame->width,frame->height,frame->psm,0,0);
 
@@ -129,21 +132,25 @@ int main()
 
 	init_gs(&frame, &z, 800, 600, GS_PSM_32, GS_PSMZ_24);
 	init_drawing_environment(&frame,&z, buffer);
-
+	
 	dma_wait_fast();
 	while (1) {
 		qword_t *q = buffer;
 		q = draw_disable_tests(q, 0, &z);
-		q = draw_clear(q, 0, OFFSET - (frame.width / 2), OFFSET - (frame.height / 2), frame.width, frame.height, 20, 20, 20);
+		q = draw_clear(q, 0, OFFSET - (frame.width /2),
+			       OFFSET - (frame.height / 2),
+			       frame.width, frame.height, 100, 100, 100);
+		
 		q = draw_enable_tests(q, 0, &z);
+		
 		q = draw_triangle(q);
 		q = draw_finish(q);
-
+		
 		dma_channel_send_normal(DMA_CHANNEL_GIF, buffer, q - buffer, 0, 0);
 		draw_wait_finish();
 		graph_wait_vsync();
 
-		sleep(2);
+		sleep(1);
 	}
 	return 0; 
 }

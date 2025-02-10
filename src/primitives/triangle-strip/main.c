@@ -25,9 +25,10 @@ int init_gs(framebuffer_t *frame, zbuffer_t *z, int width, int height, int psm, 
     frame->mask = 0;
     frame->address = graph_vram_allocate(width, height, psm, GRAPH_ALIGN_PAGE);
     z->address = graph_vram_allocate(width, height, psmz, GRAPH_ALIGN_PAGE);
-    z->enable = 0;
-    z->method = 0;
-    z->zsm = 0;
+	
+    z->enable = DRAW_ENABLE;
+    z->method = ZTEST_METHOD_GREATER_EQUAL;
+    z->zsm = psmz;
     z->mask = 0;
 
     graph_initialize(frame->address, frame->width, frame->height, frame->psm, 0, 0);

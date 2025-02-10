@@ -22,10 +22,13 @@ int init_gs(framebuffer_t *frame, zbuffer_t *z, int width, int height, int psm, 
 	frame->psm = psm;
 	frame->mask = 0;
         frame->address = graph_vram_allocate(width, height, psm, GRAPH_ALIGN_PAGE);
+	
 	z->address = graph_vram_allocate(width, height, psmz, GRAPH_ALIGN_PAGE);
-	z->enable = 0;
-	z->method = 0;
-	z->zsm = 0;
+	z->enable = DRAW_ENABLE;
+	/* z->enable = 0; */
+	z->method = ZTEST_METHOD_GREATER_EQUAL;
+	/* z->method = 0; */
+	z->zsm = psmz;
 	z->mask = 0;
 
 	graph_initialize(frame->address,frame->width,frame->height,frame->psm,0,0);
@@ -45,28 +48,28 @@ void init_drawing_environment(framebuffer_t *frame, zbuffer_t *z, qword_t *buffe
 
 qword_t *draw_rectangle(qword_t *q)
 {
-    int red = 0;
-    int green = 255;
-    int blue = 0;
+	int red = 0;
+	int green = 255;
+	int blue = 0;
 
-    // Giftag
-    PACK_GIFTAG(q, GIF_SET_TAG(4, 1, 0, 0, 0, 1), GIF_REG_AD);
-    q++;
+	// Giftag
+	PACK_GIFTAG(q, GIF_SET_TAG(4, 1, 0, 0, 0, 1), GIF_REG_AD);
+	q++;
   
-    // primitive data
-    PACK_GIFTAG(q, GIF_SET_PRIM(GS_PRIM_SPRITE, 1, 0, 0, 0, 0, 0, 0, 0), GIF_REG_PRIM);
-    q++;
-    PACK_GIFTAG(q, GIF_SET_RGBAQ(red, green,  blue, 128, 128), GIF_REG_RGBAQ);
-    q++;
-    PACK_GIFTAG(q, GIF_SET_XYZ(ftoi4(-400 +OFFSET),
-			       ftoi4(-300+OFFSET),
-			       1), GIF_REG_XYZ2);
-    q++;
-    PACK_GIFTAG(q, GIF_SET_XYZ(ftoi4(0+OFFSET),
-			       ftoi4(0+OFFSET),
-			       1), GIF_REG_XYZ2);
-    q++;
-    return q;
+	// primitive data
+	PACK_GIFTAG(q, GIF_SET_PRIM(GS_PRIM_SPRITE, 1, 0, 0, 0, 0, 0, 0, 0), GIF_REG_PRIM);
+	q++;
+	PACK_GIFTAG(q, GIF_SET_RGBAQ(red, green,  blue, 128, 128), GIF_REG_RGBAQ);
+	q++;
+	PACK_GIFTAG(q, GIF_SET_XYZ(ftoi4(-100 +OFFSET),
+				   ftoi4(-100+OFFSET),
+				   1), GIF_REG_XYZ2);
+	q++;
+	PACK_GIFTAG(q, GIF_SET_XYZ(ftoi4(0+OFFSET),
+				   ftoi4(0+OFFSET),
+				   1), GIF_REG_XYZ2);
+	q++;
+	return q;
 }
 
 int main()
