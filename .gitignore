@@ -15,6 +15,7 @@ doxygen
 *.ko
 *.obj
 *.elf
+*.irx
 
 # Linker output
 *.ilk

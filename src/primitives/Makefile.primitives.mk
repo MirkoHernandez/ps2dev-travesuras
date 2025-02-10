@@ -17,8 +17,7 @@ docs:
 	(cd ../../.. && doxygen Doxyfile)
 
 browse: docs
-	$(BROWSER) doxygen/html/$(DOCUMENT)
-
+	(cd ../../.. && $(BROWSER) doxygen/html/$(DOCUMENT))
 
 .PHONY: clean
 clean:
